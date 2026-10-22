@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Notebook</title>
+  <link rel="stylesheet" href="lib/codemirror.min.css">
+  <link rel="stylesheet" href="notebook.css">
+  <script src="lib/codemirror.min.js"></script>
+  <script src="lib/python.min.js"></script>
+  <script src="lib/markdown.min.js"></script>
+  <script src="lib/matchbrackets.min.js"></script>
+  <script src="lib/closebrackets.min.js"></script>
+  <script src="lib/vim.min.js"></script>
+  <script src="lib/marked.min.js"></script>
+</head>
+<body>
+  <header id="toolbar">
+    <div id="kernel" title="Kernel status"><span class="dot"></span><span id="kernel-text">Starting…</span></div>
+    <div class="buttons">
+      <button id="btn-esc" class="hidden" title="Esc (leave vim insert mode)">esc</button>
+      <button id="btn-run" title="Run cell (Shift-Enter)">▶</button>
+      <button id="btn-run-all" title="Run all">▶▶</button>
+      <button id="btn-stop" title="Interrupt"><span class="stop-square"></span></button>
+      <button id="btn-add" title="Add code cell below">+</button>
+      <button id="btn-menu" title="More">•••</button>
+    </div>
+  </header>
+  <div id="menu" class="hidden">
+    <button data-action="add-markdown">Add Markdown Cell</button>
+    <button data-action="toggle-type">Toggle Code / Markdown</button>
+    <button data-action="move-up">Move Cell Up</button>
+    <button data-action="move-down">Move Cell Down</button>
+    <button data-action="delete">Delete Cell</button>
+    <hr>
+    <button data-action="clear">Clear All Outputs</button>
+    <button data-action="restart">Restart Kernel</button>
+    <button data-action="restart-run">Restart &amp; Run All</button>
+  </div>
+  <main id="cells"></main>
+  <script src="notebook.js"></script>
+</body>
+</html>
