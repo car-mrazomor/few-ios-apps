@@ -1,0 +1,7 @@
+build/
+Vendor/
+DerivedData/
+iFuckAI.xcodeproj/
+*.xcuserstate
+xcuserdata/
+.DS_Store
