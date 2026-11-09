@@ -1,7 +1,7 @@
 # MinnetCam
 
 iOS app that recognizes what you point the camera at, live and fully on device.
-Runs [minnet](../minnet), a CNN written from scratch in C, trained on CIFAR-10.
+Runs [minnet](https://github.com/car-mrazomor/minnet), a CNN written from scratch in C, trained on CIFAR-10.
 
 ## Build
 
